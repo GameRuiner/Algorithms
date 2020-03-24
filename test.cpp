@@ -16,11 +16,18 @@ using namespace std;
 int main() {
 
 	vector<int> A = {100, 2, 95, 6, 8, 3, 7, 42, 6, 1};
+	vector<int> TestA = { 100, 2};
 	vector<int> B = {4, 3, 2, 10, 12, 1, 5, 6};
 	vector<int> C = {8, 6, 2 ,4 ,6, 8, 7, 3};
 	vector<int> res;
 	int resint;
 
+	res = mergesort(A);
+	printVector(res);
+	res = mergesort(B);
+	printVector(res);
+	res = mergesort(C);
+	printVector(res);
 	// binsearch test
 	/*A = selection(A);
 	printVector(A);

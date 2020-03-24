@@ -1,0 +1,4 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SelfAlgotithms.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  test.cpp
+D:\Users\MarkG\source\repos2019\test.cpp(23,6): warning C4101: 'resint': unreferenced local variable
+  SelfAlgotithms.vcxproj -> D:\Users\MarkG\source\repos2019\Debug\AlgorithmsAndStructures.exe
