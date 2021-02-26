@@ -1,4 +1,16 @@
-﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SelfAlgotithms.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SelfAlgotithms.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  binsearch.cpp
+  output.cpp
+  bublesort.cpp
+  insertionSort.cpp
+  mergesort.cpp
+D:\Users\MarkG\uniwer\AISD\Algorithms\sorting\mergesort.cpp(12,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Users\MarkG\uniwer\AISD\Algorithms\sorting\mergesort.cpp(24,11): warning C4018: '<': signed/unsigned mismatch
+D:\Users\MarkG\uniwer\AISD\Algorithms\sorting\mergesort.cpp(24,27): warning C4018: '<': signed/unsigned mismatch
+D:\Users\MarkG\uniwer\AISD\Algorithms\sorting\mergesort.cpp(34,11): warning C4018: '<': signed/unsigned mismatch
+D:\Users\MarkG\uniwer\AISD\Algorithms\sorting\mergesort.cpp(38,11): warning C4018: '<': signed/unsigned mismatch
+  selectionsort.cpp
   test.cpp
-D:\Users\MarkG\source\repos2019\test.cpp(23,6): warning C4101: 'resint': unreferenced local variable
-  SelfAlgotithms.vcxproj -> D:\Users\MarkG\source\repos2019\Debug\AlgorithmsAndStructures.exe
+D:\Users\MarkG\uniwer\AISD\Algorithms\test.cpp(23,6): warning C4101: 'resint': unreferenced local variable
+  Generating Code...
+  SelfAlgotithms.vcxproj -> D:\Users\MarkG\uniwer\AISD\Algorithms\Debug\AlgorithmsAndStructures.exe

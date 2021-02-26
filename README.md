@@ -6,5 +6,6 @@ Sorting algorithms:
 	* Selection sort
 	* Buble sort
 	* Insertion sort
+	* Merge sort
 Searching algorithms:
 	* BinSearch
