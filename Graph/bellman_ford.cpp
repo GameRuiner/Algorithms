@@ -1,5 +1,7 @@
 // A C++ program for Bellman-Ford's single source 
-// shortest path algorithm. 
+// shortest path algorithm.
+// Given a graph and a source vertex src in graph, find shortest paths from src to 
+// all vertices in the given graph 
 // source https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
 #include <bits/stdc++.h>
 
@@ -35,7 +37,8 @@ void printArr(int dist[], int n) {
 void BellmanFord(struct Graph* graph, int src) {
 	int V = graph->V;
 	int E = graph->E;
-	int dist[V];
+	//int dist[V];
+	int* dist = new int[V];
 
 	//Step 1. initialize
 	for (int i = 0; i < V; i++) {
