@@ -4,26 +4,10 @@
 // all vertices in the given graph 
 // source https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
 #include <bits/stdc++.h>
+#include "../weighted_graph.h"
 
 using namespace std;
 
-struct Edge {
-	int src, dest, weight;
-};
-
-struct Graph {
-	int V, E;
-
-	struct Edge* edge;
-};
-
-struct Graph* createGraph(int V, int E) {
-	struct Graph* graph = new Graph;
-	graph->V = V;
-	graph->E = E;
-	graph->edge = new Edge[E];
-	return graph;
-};
 
 void printArr(int dist[], int n) {
 	printf("Vertex	Distance from Source\n");
