@@ -3,29 +3,11 @@
 // O (|V| + |E|)
 
 #include <bits/stdc++.h>
+#include "graph.h"
+
 using namespace std;
 
 // Kahn's algorithm
-
-class Graph {
-    int V;
-
-    list<int>* adj;
-
-public:
-    Graph(int V);
-    void addEdge(int u, int v);
-    void topologicalSort();
-};
-
-Graph::Graph(int V) {
-    this->V = V;
-    adj = new list<int>[V];
-}
-
-void Graph::addEdge(int u, int v) {
-    adj[u].push_back(v);
-}
 
 void Graph::topologicalSort() {
     vector<int> in_degree(V, 0);
