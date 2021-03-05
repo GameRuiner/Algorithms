@@ -1,7 +1,7 @@
 #include "graph.h"
+// Time Complexity O(V + E)
 
-void Graph::DFSUtil(int v, bool visited[])
-{
+void Graph::DFSUtil(int v, bool visited[]) {
     visited[v] = true;
     cout << v << " ";
 
@@ -11,8 +11,7 @@ void Graph::DFSUtil(int v, bool visited[])
             DFSUtil(*i, visited);
 }
 
-void Graph::DFS(int v)
-{
+void Graph::DFS(int v) {
     bool* visited = new bool[V];
     for (int i = 0; i < V; i++) {
         visited[i] = false;
@@ -37,5 +36,4 @@ int main() {
     cout << "\n";
 
     return 0;
-
 }
