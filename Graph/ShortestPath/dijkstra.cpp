@@ -1,5 +1,6 @@
 // A C++ program for Dijkstra's single source shortest path algorithm. 
 // The program is for adjacency matrix representation of the graph 
+// Time Complexity: O(V^2)
   
 #include <limits.h> 
 #include <stdio.h> 
