@@ -4,36 +4,8 @@
 //  Time Complexity: O(ElogE) or O(ElogV)
 #include <bits/stdc++.h>
 #include "../weighted_graph.h"
+#include "subset.h"
 using namespace std;
-
-class subset {
-    public:
-        int parent;
-        int rank;
-};
-
-// A utility function to find set (parent) of an element i
-int find(subset subsets[], int i) {
-    if (subsets[i].parent != i) {
-        subsets[i].parent 
-            = find(subsets, subsets[i].parent);
-    }
-    return subsets[i].parent;
-}
-
-void Union(subset subsets[], int x, int y) {
-    int xroot = find(subsets, x);
-    int yroot = find(subsets, y);
-
-    if (subsets[xroot].rank < subsets[yroot].rank) {
-        subsets[xroot].parent = yroot;
-    } else if (subsets[xroot].rank > subsets[yroot].rank) {
-        subsets[yroot].parent = xroot;
-    } else {
-        subsets[yroot].parent = xroot;
-        subsets[xroot].rank++;
-    }
-}
 
 int myComp(const void* a, const void* b) {
     Edge* a1 = (Edge*)a;
@@ -41,7 +13,7 @@ int myComp(const void* a, const void* b) {
     return a1->weight > b1->weight;
 }
 
-void KruskalMST(Graph* graph) {
+void kruskalMST(Graph* graph) {
     int V = graph->V;
     //Edge result[V];
     Edge* result = new Edge[V];
@@ -114,7 +86,7 @@ int main() {
     graph->edge[4].dest = 3;
     graph->edge[4].weight = 4;
 
-    KruskalMST(graph);
+    kruskalMST(graph);
     
     return 0;
 }
