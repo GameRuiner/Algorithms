@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-#include "Sorting/bublesort.h"
+#include "Sorting/bubblesort.h"
 #include "Sorting/insertionsort.h"
 #include "Sorting/selectionsort.h"
 #include "Sorting/mergesort.h"
@@ -52,8 +52,8 @@ int main() {
 	//printVector(res);
 
 
-	// buble sort test
-	//A = buble(A);
+	// bubble sort test
+	//A = bubble(A);
 	//printVector(A);
 
 	// insertion sort test
