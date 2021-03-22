@@ -28,6 +28,17 @@ public:
     void deleteKey(int i);
 
     void insertKey(int k);
+
+    // for priority queue
+    void push(int k);
+
+    int size();
+
+    int top();
+
+    void pop();
+
+    bool empty();
 };
 
 void swap(int *x, int *y);
