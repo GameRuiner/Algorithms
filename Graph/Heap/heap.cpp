@@ -17,7 +17,7 @@ int MinHeap::right(int i) {
 }
 
 int MinHeap::getMin() {
-        return harr[0];
+    return harr[0];
 }
 
 MinHeap::MinHeap(int cap) {
